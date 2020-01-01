@@ -1,3 +1,4 @@
+# coding=utf-8
 from os import path
 from pod_base import PodBase, calc_offset
 
