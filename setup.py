@@ -1,15 +1,18 @@
 from setuptools import setup, find_packages
-from user_operation import __version__
 
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+version = {}
+with open("user_operation/version.py") as fp:
+    exec(fp.read(), version)
+
 requires = ["pod-base>=1,<2"]
 
 setup(
     name="pod-user-operation",
-    version=__version__,
+    version=version['__version__'],
     url="https://github.com/FanapSoft/pod-user-operation-python-sdk",
     license="MIT",
     author="ReZa ZaRe",
