@@ -21,7 +21,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     keywords=["pod", "user operation", "pod sdk"],
-    packages=find_packages(),
+    packages=find_packages(exclude=("examples", "tests")),
     install_requires=requires,
     zip_safe=False,
     classifiers=[
